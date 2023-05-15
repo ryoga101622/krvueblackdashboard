@@ -10,6 +10,14 @@
       "StackName": "amplify-vueblackdashboardmas-dev-174925",
       "StackId": "arn:aws:cloudformation:ap-northeast-2:047403811176:stack/amplify-vueblackdashboardmas-dev-174925/68693480-ee46-11ed-8022-06eb09483954",
       "AmplifyAppId": "d3nss0o1srgzue"
+    },
+    "categories": {
+      "auth": {
+        "vueblackdashboardmasdae8bb65": {}
+      },
+      "predictions": {
+        "translateText71fbe769": {}
+      }
     }
   }
 }
