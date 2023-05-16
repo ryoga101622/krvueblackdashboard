@@ -1,20 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-vueblackdashboardmas-dev-174925-authRole",
-      "UnauthRoleArn": "arn:aws:iam::047403811176:role/amplify-vueblackdashboardmas-dev-174925-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::047403811176:role/amplify-vueblackdashboardmas-dev-174925-authRole",
-      "Region": "ap-northeast-2",
-      "DeploymentBucketName": "amplify-vueblackdashboardmas-dev-174925-deployment",
-      "UnauthRoleName": "amplify-vueblackdashboardmas-dev-174925-unauthRole",
-      "StackName": "amplify-vueblackdashboardmas-dev-174925",
-      "StackId": "arn:aws:cloudformation:ap-northeast-2:047403811176:stack/amplify-vueblackdashboardmas-dev-174925/68693480-ee46-11ed-8022-06eb09483954",
-      "AmplifyAppId": "d3nss0o1srgzue"
-    },
-    "categories": {
-      "auth": {
-        "vueblackdashboardmasdae8bb65": {}
-      }
+      "AuthRoleName": "amplify-vueblackdashboardmas-dev-120658-authRole",
+      "UnauthRoleArn": "arn:aws:iam::047403811176:role/amplify-vueblackdashboardmas-dev-120658-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::047403811176:role/amplify-vueblackdashboardmas-dev-120658-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-vueblackdashboardmas-dev-120658-deployment",
+      "UnauthRoleName": "amplify-vueblackdashboardmas-dev-120658-unauthRole",
+      "StackName": "amplify-vueblackdashboardmas-dev-120658",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:047403811176:stack/amplify-vueblackdashboardmas-dev-120658/b97f11f0-f396-11ed-808a-0edc6c3bd8dd",
+      "AmplifyAppId": "d1dj46kke55eyo"
     }
   }
 }
