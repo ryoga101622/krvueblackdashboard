@@ -1,3 +1,90 @@
 <template>
-  <h1>AI View</h1>
+  <div class="main-contents">
+    <div class="message_base">
+      <div v-for="message in messages" :key="message.id">
+        <div v-bind:class="[message.owner === username ? 'message' : 'message_opponent']">
+          {{ message.content }}
+        </div>
+        <div v-bind:class="[message.owner === username ? 'username' : 'username_opponent']">
+          {{ message.owner }}
+        </div>
+      </div>
+    </div>
+    <input
+      class="message-input"
+      placeholder="Enter a message (send with Shift+Enter)"
+      v-model="content"
+      @keydown.enter.shift="sendMessage"
+    />
+  </div>
 </template>
+
+<script>
+import { API, graphqlOperation } from '@aws-amplify/api';
+import { useAuthenticator } from '@aws-amplify/ui-vue';
+import { createMessage } from '@/graphql/mutations';
+import { listMessages } from '@/graphql/queries';
+import { onCreateMessage } from '@/graphql/subscriptions';
+import { ref, onBeforeUnmount, onUpdated } from 'vue';
+
+export default {
+  props: {
+    username: String,
+  },
+  setup(props) {
+    const messages = ref([]);
+    const content = ref('');
+    const subscription = ref({});
+
+    const sendMessage = async () => {
+      if (event.keyCode !== 13 || !content.value) return;
+
+      const message = {
+        id: new Date().getTime() + props.username,
+        content: content.value,
+      };
+
+      // Mutation(createMessage) の実装 ↓
+
+      // ↑↑↑↑↑↑
+      content.value = '';
+    };
+
+    const fetch = async () => {
+      // Query(listMessages) の実装 ↓
+
+      // ↑↑↑↑↑↑
+    };
+
+    const subscribe = async () => {
+      // Subscription(onCreateMessages) の実装 1 ↓
+
+      // ↑↑↑↑↑↑
+    };
+
+    const scrollBottom = () => {
+      const container = document.querySelector('.message_base');
+      container.scrollTop = container.scrollHeight;
+    };
+
+    onBeforeUnmount(() => {
+      // Subscription(onCreateMessages) の実装 2 ↓
+
+      // ↑↑↑↑↑↑
+    });
+
+    onUpdated(() => {
+      scrollBottom();
+    });
+
+    fetch();
+    subscribe();
+
+    return {
+      messages,
+      content,
+      sendMessage,
+    };
+  },
+};
+</script>
