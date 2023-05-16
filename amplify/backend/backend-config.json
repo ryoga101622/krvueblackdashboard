@@ -25,11 +25,5 @@
       "service": "Cognito"
     }
   },
-  "predictions": {
-    "translateText71fbe769": {
-      "convertType": "translateText",
-      "providerPlugin": "awscloudformation",
-      "service": "Translate"
-    }
-  }
+  "predictions": {}
 }
